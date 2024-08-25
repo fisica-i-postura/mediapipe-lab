@@ -5,7 +5,8 @@ mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
 mp_draw = mp.solutions.drawing_utils
 
-cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(0) # To use webcam
+cap = cv2.VideoCapture("resources/front-back-weight-0.mov") # path to video file 
 
 while True:
     success, img = cap.read()
